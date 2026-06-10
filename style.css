@@ -235,7 +235,7 @@ section {
 
 section h2 {
   text-align: center;
-  font-size: 4rem;
+  font-size: 3rem;
   margin-bottom: 20px;
 }
 
@@ -425,8 +425,16 @@ section h2 {
 }
 .contact .contact-text {
   font-size: 1rem;
-  padding: 0px 150px;
-  text-wrap: wrap;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.8;
+  padding: 0;
+}
+@media (max-width: 768px) {
+  .contact .contact-text {
+    padding: 0 20px;
+    font-size: 1rem;
+  }
 }
 
 /* ===========================
