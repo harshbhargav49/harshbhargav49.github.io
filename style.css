@@ -311,12 +311,39 @@ section h2 {
   margin: auto;
 }
 
-.timeline-item {
+/* .timeline-item {
   background: var(--card);
   border-left: 4px solid var(--accent);
   padding: 25px;
   margin-bottom: 25px;
   border-radius: 15px;
+} */
+.timeline-item {
+  background: var(--card);
+  border-left: 4px solid var(--accent);
+  border: 1px solid var(--border);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+.education {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.light-mode .timeline-item {
+  background: #ffffff;
+  border: 1px solid #dbe3f0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
+
+.light-mode .timeline-item:hover {
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
+
+.timeline-item:hover {
+  transform: translateY(-5px);
 }
 
 .timeline-item h3 {
@@ -511,11 +538,58 @@ footer {
   }
 }
 
+.hero-status {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: var(--secondary);
+  flex-wrap: wrap;
+}
+.status-dot {
+  width: 10px;
+  height: 10px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+.contact {
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+.contact-btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 16px 40px;
+  border-radius: 50px;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+}
+.social-links {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.social-links a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+.social-links a:hover {
+  color: var(--accent);
+}
+.light-mode .stat-card,
+.light-mode .skill-card,
+.light-mode .project-card {
+  background: #ffffff;
+  border: 1px solid #dbe3f0;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+}
 
-.hero-status{margin-top:30px;display:flex;gap:15px;align-items:center;color:var(--secondary);flex-wrap:wrap}
-.status-dot{width:10px;height:10px;background:#22c55e;border-radius:50%}
-.contact{text-align:center;max-width:900px;margin:auto}
-.contact-btn{display:inline-block;margin-top:30px;padding:16px 40px;border-radius:50px;background:var(--accent);color:#fff;text-decoration:none}
-.social-links{margin-top:30px;display:flex;justify-content:center;gap:20px;flex-wrap:wrap}
-.social-links a{text-decoration:none;color:var(--secondary)}
-.social-links a:hover{color:var(--accent)}
+.light-mode .stat-card:hover,
+.light-mode .skill-card:hover,
+.light-mode .project-card:hover {
+  box-shadow: 0 15px 35px rgba(37, 99, 235, 0.12);
+}
